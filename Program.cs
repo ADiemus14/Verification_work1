@@ -9,7 +9,6 @@
 Console.WriteLine("Привет!");
 Console.WriteLine("Я учусь искать трехсимвольные строки и строить из них массивы.");
 Console.Write("Введи несколько слов или цифр, чтобы мы проверили, что у меня получается: ");
-
 string strings = Console.ReadLine();
 string[] stringArray = strings.Split(' ');
 
@@ -39,3 +38,15 @@ string [] CheckingElements(string [] Array)
   }
   return rez;
 }
+
+//метод вывода  массива
+
+void printA(string [] Array2)
+{
+      for (int i = 0;i<Array2.Length;i++)
+    {
+    Console.Write($"{Array2[i]}, ");
+    }
+    }
+
+printA(CheckingElements (stringArray));
