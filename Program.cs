@@ -20,23 +20,23 @@ string[] stringArray = strings.Split(' ');
 // проверка и учет элементов
 string [] CheckingElements(string [] Array)
 {
-  int m = 0;
+  int count = 0;
   for (int i = 0;i<Array.Length;i++)
   {
     if(Array[i].Length <=3)
-    m++;
+    count++;
   }
-  string [] rez = new string [m];
+  string [] rezult = new string [count];
   int j = 0;
   for (int i = 0;i<Array.Length;i++)
   {
     if(Array[i].Length <=3)
     {
-        rez[j] = Array[i];
+        rezult[j] = Array[i];
         j++;
     }
   }
-  return rez;
+  return rezult;
 }
 
 //метод вывода  массива
